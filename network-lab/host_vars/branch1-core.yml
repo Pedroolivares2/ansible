@@ -1,8 +1,7 @@
 ---
 hostname: branch1-core
 
-eigrp_instances:
-  - instance: ent_eigrp
+eigrp_instances: ent_eigrp
 
 loopback_interfaces:
  

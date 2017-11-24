@@ -1,5 +1,5 @@
 
-router eigrp {{ eigrp_global[eigrp_instance.instance].ipv4_autonomous_system }}
+router eigrp {{ eigrp_global[eigrp_instance].ipv4_autonomous_system }}
    passive-interface default
 {%     for lan_interface in lan_interfaces %}
 {%             if lan_interface.ip is defined %}
