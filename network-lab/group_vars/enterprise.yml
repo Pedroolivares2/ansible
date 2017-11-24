@@ -12,3 +12,10 @@ snmp_community:
 lan_key_chains: 
    - key_chain_name: LAN-KEY
      key_string: eigrp@LAN
+
+eigrp_global:
+  ent_eigrp:
+    virtual_instances_name: ENTERPRISE-EIGRP
+    ipv4_autonomous_system: 100
+    af_interface_default:
+      passive_interface: true

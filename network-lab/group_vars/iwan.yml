@@ -12,13 +12,6 @@ wan_key_chains:
    - key_chain_name: INET-WAN-KEY
      key_string: inet-wan@154
 
-eigrp_global:
-  ent_eigrp:
-    virtual_instances_name: ENTERPRISE-EIGRP
-    ipv4_autonomous_system: 100
-    af_interface_default:
-      passive_interface: true
-
     
 pfr:
   domain: iWAN-LAB
