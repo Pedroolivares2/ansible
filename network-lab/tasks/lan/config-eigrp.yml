@@ -1,7 +1,7 @@
 ---
 - name: Apply EIGRP Configuration
   ios_config:
-    src: templates/wan/04-eigrp_lan.j2
+    src: templates/lan/04-eigrp_lan.j2
     provider: "{{ ioscli }}"
   tags: eigpr
   register: eigrp_config_results

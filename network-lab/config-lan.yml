@@ -4,13 +4,13 @@
 
 
   tasks:
-   - import_tasks: tasks/ios-gather-facts.yml
-   - import_tasks: tasks/ios-config-banner.yml
-   - import_tasks: tasks/lan/config-loopback.yml
-   - import_tasks: tasks/lan/config-common.yml
-   - import_tasks: tasks/lan/config-vlan-interface.yml 
+#   - import_tasks: tasks/ios-gather-facts.yml
+#   - import_tasks: tasks/ios-config-banner.yml
+#   - import_tasks: tasks/lan/config-loopback.yml
+#   - import_tasks: tasks/lan/config-common.yml
+#   - import_tasks: tasks/lan/config-vlan-interface.yml 
    - import_tasks: tasks/lan/config-eigrp.yml 
-   - import_tasks: tasks/ios-backup.yml
+#   - import_tasks: tasks/ios-backup.yml
 
    - name: create log file for individual device
      file: path=./change-logs/{{inventory_hostname}}.txt state=touch
