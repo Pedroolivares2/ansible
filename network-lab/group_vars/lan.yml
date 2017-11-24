@@ -1,0 +1,8 @@
+wan_key_chains: 
+   - key_chain_name: MPLS-WAN-KEY
+     key_string: mpls-wan@154
+   - key_chain_name: INET-WAN-KEY
+     key_string: inet-wan@154
+
+eigrp_global:
+    ipv4_autonomous_system: 100
