@@ -1,13 +1,12 @@
 
 router eigrp {{ eigrp_global[eigrp_instance.instance].ipv4_autonomous_system }}
    passive-interface default
-{%         for lan_interface in lan_interfaces %}
+{%     for lan_interface in lan_interfaces %}
 {%             if lan_interface.ip is defined %}
   network {{ lan_interface.ip.address | ipaddr('network') }} {{ lan_interface.ip.address | ipaddr('hostmask') }}
 {%                 if lan_interface.eigrp is defined %}
    no passive-interface  {{ lan_interface.interface }}
 {%                 endif %}
-{%              endif %}
+{%             endif %}
 {%     endfor%}
   eigrp router-id {{ loopback_interfaces[0].ip.address | ipaddr('address') }}
-{% endif %}
